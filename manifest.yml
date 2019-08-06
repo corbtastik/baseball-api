@@ -1,0 +1,9 @@
+---
+applications:
+- name: baseball-api
+  memory: 1G
+  path: target/baseball-api-1.0.0.SNAP.jar
+  buildpack: java_buildpack_offline
+  env:
+    JBP_CONFIG_JMX: '{enabled: true}'
+    JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{ enabled: false }'
